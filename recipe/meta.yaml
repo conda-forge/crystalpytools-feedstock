@@ -1,5 +1,5 @@
 {% set name = "CRYSTALpytools" %}
-{% set version = "2024.11.2" %}
+{% set version = "2025.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/crystalpytools-{{ version }}.tar.gz
-  sha256: 4fc74e2def33bf658f6de8835a15251d0521a4096a58612b27ac341b8485d272
+  sha256: 1946bf37e074b537504b9904eae79fb33bb8128e201ff687a77bae2b8134beb2
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
